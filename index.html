@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="assets/css/normalize.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <title>Orgamic-Shop</title>
 </head>
+
 <body>
   <!-- Site Header -->
   <header id="site-header" class="site-header">
     <div class="home-page" id="home-page">
-      <div class="menu-bar">
+      <div id="menu-bar" class="menu-bar">
         <div class="element">
           <div class="location-email">
             <a href="#" class="icon-link">
@@ -44,9 +48,9 @@
             </div>
           </div>
         </div>
-        <hr class="line">
       </div>
-      <nav class="site-nav">
+      <hr class="line">
+      <nav id="site-nav" class="site-nav">
         <div class="site-nav__logo">
           <img src="assets/css/images/logo.svg" alt="Logo svg" class="site-nav__svg">
         </div>
@@ -80,20 +84,23 @@
   <main id="site-main" class="site-main">
     <!-- Hero Section -->
     <section id="hero-section" class="hero-section">
-      <div class="hero-section__content">
-        <div class="content-title">
-          <h2 class="content-title">
-            <span>body needs</span> <br>
-            organic food <br>
-            good health <br>
-          </h2>
-          <a href="#" class="btn">SHOP NOW</a>
+      <div id="hero-content" class="hero-content">
+        <div class="hero-section__content">
+          <div class="content-title">
+            <h2 class="content-title">
+              <span>body needs</span> <br>
+              organic food <br>
+              good health <br>
+            </h2>
+            <a href="#" class="btn">SHOP NOW</a>
+          </div>
         </div>
-      </div>
-      <div class="hero-section__img">
-        <img src="images/Vegetables1x.png" alt="Vegatable" srcset="images/Vegetables1x.png 1x , images/Vegetables2x.png 2x">
-        <div class="meta-tag">
-          <span>ORGANIC</span>
+        <div class="hero-section__img">
+          <img src="images/Vegetables1x.png" alt="Vegatable"
+            srcset="images/Vegetables1x.png 1x , images/Vegetables2x.png 2x">
+          <div class="meta-tag">
+            <span>ORGANIC</span>
+          </div>
         </div>
       </div>
       <div class="services">
@@ -129,10 +136,12 @@
     </section>
 
     <!-- Quality-section -->
-    <section class="quality-section">
-      <div class="quality-section__img">
-        <img src="images/JonathanKamper1x.png" alt="JonathanKamper" srcset="images/JonathanKamper1x.png 1x , images/JonathanKamper2x.png 2x" class="quality-img">
-        <img src="images/DoseJuice1x.png" alt="DoseJuice" srcset="images/DoseJuice1x.png 1x , images/DoseJuice2x.png 2x" class="quality-img">
+    <section id="quality-section" class="quality-section">
+      <div id="quality-section__img" class="quality-section__img">
+        <img src="images/JonathanKamper1x.png" alt="JonathanKamper"
+          srcset="images/JonathanKamper1x.png 1x , images/JonathanKamper2x.png 2x" class="quality-img">
+        <img src="images/DoseJuice1x.png" alt="DoseJuice" srcset="images/DoseJuice1x.png 1x , images/DoseJuice2x.png 2x"
+          class="quality-img">
         <div class="description">
           <span>
             15+ Years <br>
@@ -146,7 +155,10 @@
           organic food store
         </h2>
         <p class="section-subtitle">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy <br>  text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy <br> text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+          to make a type specimen book. <br> It has survived not only five centuries, but also the leap into electronic
+          typesetting, remaining essentially unchanged.
         </p>
         <blockquote class="blockquote">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br> eiusmod tempor incididunt ut labore
@@ -168,7 +180,7 @@
 
     <!-- Categories Section -->
     <section id="categories-section" class="categories-section">
-      <div class="categories-section__items">
+      <div id="categories-section__items" class="categories-section__items">
         <div class="categories-section__item">
           <div class="categories-section__img">
             <img src="images/VegetablesMini.png" alt="vegetables">
@@ -251,6 +263,498 @@
         </div>
       </div>
     </section>
+
+    <!-- Products Section -->
+    <section id="products-section" class="products-section">
+      <h2 class="section-title">Popular Products</h2>
+      <ul class="products-item">
+        <li class="products-item"><a href="#" class="products-item__link">All</a></li>
+        <li class="products-item"><a href="#" class="products-item__link">Food</a></li>
+        <li class="products-item"><a href="#" class="products-item__link">Organic</a></li>
+        <li class="products-item"><a href="#" class="products-item__link">Fruits</a></li>
+        <li class="products-item"><a href="#" class="products-item__link">Health</a></li>
+        <li class="products-item"><a href="#" class="products-item__link">Seafood</a></li>
+      </ul>
+      <div id="products-content__items" class="products-content__items">
+        <div class="products-content__item">
+          <div class="products-content__item-img">
+            <img src="images/BlackberryFruit.png" alt="Blackberry">
+          </div>
+          <div class="products-content__item-info">
+            <h4 class="products-content__title">Blackberry Fruit</h4>
+            <p class="products-content__subtitle">$10.00 - $20.00</p>
+            <div class="products-content__content">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <a href="#" class="btn">SHOP NOW</a>
+          </div>
+        </div>
+        <div class="products-content__item">
+          <div class="products-content__item-img">
+            <img src="images/AvocadoFruit.png" alt="Avocado Fruit">
+          </div>
+          <div class="products-content__item-info">
+            <h4 class="products-content__title"> Avocado Fruit</h4>
+            <p class="products-content__subtitle">$30.00 - $15.00</p>
+            <div class="products-content__content">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <a href="#" class="btn">SHOP NOW</a>
+          </div>
+        </div>
+        <div class="products-content__item">
+          <div class="products-content__item-img">
+            <img src="images/Kivi.png" alt="Kiwifruit Vitamin">
+          </div>
+          <div class="products-content__item-info">
+            <h4 class="products-content__title">Kiwifruit Vitamin</h4>
+            <p class="products-content__subtitle">$17.00</p>
+            <div class="products-content__content">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <a href="#" class="btn">SHOP NOW</a>
+          </div>
+        </div>
+        <div class="products-content__item">
+          <div class="products-content__item-img">
+            <img src="images/Lemon.png" alt="Lemon">
+          </div>
+          <div class="products-content__item-info">
+            <h4 class="products-content__title">Lemon</h4>
+            <p class="products-content__subtitle">$7.00</p>
+            <div class="products-content__content">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <a href="#" class="btn">SHOP NOW</a>
+          </div>
+        </div>
+        <div class="products-content__item">
+          <div class="products-content__item-img">
+            <img src="images/PurpleOnion.png" alt="Purple onion">
+          </div>
+          <div class="products-content__item-info">
+            <h4 class="products-content__title">Purple onion</h4>
+            <p class="products-content__subtitle">$30.00</p>
+            <div class="products-content__content">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <a href="#" class="btn">SHOP NOW</a>
+          </div>
+        </div>
+        <div class="products-content__item">
+          <div class="products-content__item-img">
+            <img src="images/BrownAlmonds.png" alt="Brown Almonds">
+          </div>
+          <div class="products-content__item-info">
+            <h4 class="products-content__title">Brown Almonds</h4>
+            <p class="products-content__subtitle">$11.00</p>
+            <div class="products-content__content">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <a href="#" class="btn">SHOP NOW</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section id="discounts" class="discounts">
+      <div id="discounts__content" class="discounts__content">
+        <div class="discounts__left">
+          <!-- BG IMG -->
+          <p class="discounts__subtitle">Save up to 50%</p>
+          <h4 class="discounts__title">
+            THE BLUEPRINT <br>
+            TO HEALTH
+          </h4>
+          <a href="#" class="btn">BUY NOW</a>
+        </div>
+        <div class="discounts__right">
+          <!-- BG IMG -->
+          <p class="discounts__subtitle">offer 30% discount</p>
+          <h4 class="discounts__title">
+            FRUITS &
+            VEGETABLES
+          </h4>
+          <a href="#" class="btn">BUY NOW</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured-Products -->
+    <section id="featured-products__section" class="featured-products__section">
+      <h2 class="section-title">Featured Products</h2>
+      <div id="featured-products__content-items" class="featured-products__content-items">
+        <div class="products-content__item">
+          <div class="products-content__item-img">
+            <img src="images/RedPepper.png" alt="RedPepper">
+          </div>
+          <div class="products-content__item-info">
+            <h4 class="products-content__title">Red Pepper</h4>
+            <p class="products-content__subtitle">$10.00 - $20.00</p>
+            <div class="products-content__content">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <a href="#" class="btn">SHOP NOW</a>
+          </div>
+        </div>
+        <div class="products-content__item">
+          <div class="products-content__item-img">
+            <img src="images/Cabbage.png" alt="Cabbage">
+          </div>
+          <div class="products-content__item-info">
+            <h4 class="products-content__title">Cabbage</h4>
+            <p class="products-content__subtitle">$30.00 - $15.00</p>
+            <div class="products-content__content">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <a href="#" class="btn">SHOP NOW</a>
+          </div>
+        </div>
+        <div class="products-content__item">
+          <div class="products-content__item-img">
+            <img src="images/Tomato.png" alt="Tomato">
+          </div>
+          <div class="products-content__item-info">
+            <h4 class="products-content__title">Tomato</h4>
+            <p class="products-content__subtitle">$15.00</p>
+            <div class="products-content__content">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <a href="#" class="btn">SHOP NOW</a>
+          </div>
+        </div>
+      </div>
+      <div class="arrov-icons">
+        <a href="#" class="arrow"><i class="fa-solid fa-arrow-left"></i></a>
+        <a href="#" class="arrow"><i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </section>
+
+    <!-- Tesimonials-Funfact Section -->
+    <section id="tesimonials-funfact__section" class="tesimonials-funfact__section">
+      <div id="funfact" class="funfact">
+        <div class="funfact-content__items">
+          <div class="funfact-content__item">
+            <h1 class="funfct-title">1570+</h1>
+            <p class="funfact-subtitle">Total Products</p>
+          </div>
+          <div class="funfact-content__item">
+            <h1 class="funfct-title">3560+</h1>
+            <p class="funfact-subtitle">Satisfied Clients</p>
+          </div>
+          <div class="funfact-content__item">
+            <h1 class="funfct-title">4550+</h1>
+            <p class="funfact-subtitle">Project Completed</p>
+          </div>
+          <div class="funfact-content__item">
+            <h1 class="funfct-title">130+</h1>
+            <p class="funfact-subtitle">Awards Winning</p>
+          </div>
+        </div>
+      </div>
+      <div id="tesimonials" class="tesimonials">
+        <div class="tesimonials-content__image">
+          <!-- BG IMG -->
+          <img src="images/OrganicFoodHuman1x.png" alt="Human" class="tesimonials-content__img"
+            srcset="images/OrganicFoodHuman1x.png 1x , images/OrganicFoodHuman2x.png 2x">
+        </div>
+        <div class="tesimonials-content__info">
+          <div class="tesimonials-info">
+            <div class="tesimonials-info__text">
+              <span>
+                <img src="images/Comma.svg" alt="quote" class="quote">
+                <img src="images/Comma.svg" alt="quote" class="quote">
+              </span>
+              <span>
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>
+                eiusmod tempor incididunt ut labore et dolore magna <br>
+                aliqua. Ut enim ad minim veniam.”
+              </span>
+            </div>
+            <div class="tesimonials-info__image-info">
+              <img src="images/AlisonParker.png" alt="AlisonParker" class="tesimonials-image">
+              <div class="tesimonials-image__info">
+                <h6 class="tesimonials-image__title">Alison Parker</h6>
+                <p class="tesimonials-image__subtitle">Product Manager</p>
+                <div class="tesimonials-statistics__icons">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="dots-box">
+                  <span class="dots"></span>
+                  <span class="dots"></span>
+                  <span class="dots"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog-section" class="blog-section">
+      <h2 class="section-title">LATEST BLOG</h2>
+      <div id="blog-section__content" class="blog-section__content">
+        <div class="blog-section__content-item">
+          <div class="blog-image">
+            <img src="images/Lemon.png" alt="Lemon.png" class="blog-img">
+            <div class="blog-img__icons">
+              <a href="#" class="blog-img__icon-link">
+                <i class="fa-solid fa-user"></i>
+                <span>By: Admin</span>
+              </a>
+              <a href="#" class="blog-img__icon-link">
+                <i class="fa-solid fa-bookmark"></i>
+                <span>Services</span>
+              </a>
+              <a href="#" class="blog-img__icon-link">
+                <i class="fa-solid fa-user"></i>
+                <span>04 Comment</span>
+              </a>
+            </div>
+          </div>
+          <h4 class="blog-item__title">
+            Common engine oil <br>
+            problems and solutions
+          </h4>
+          <hr class="line">
+          <div class="elements">
+            <span class="data-time">
+              <i class="fa-solid fa-calendar-days"></i>
+              <span>August 27, 2021</span>
+            </span>
+            <a href="#" class="read-more">
+              <span>READ MORE</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="blog-section__content-item">
+          <div class="blog-image">
+            <img src="images/AvocadoFruit.png" alt="AvocadoFruit.png" class="blog-img">
+            <div class="blog-img__icons">
+              <a href="#" class="blog-img__icon-link">
+                <i class="fa-solid fa-user"></i>
+                <span>By: Admin</span>
+              </a>
+              <a href="#" class="blog-img__icon-link">
+                <i class="fa-solid fa-bookmark"></i>
+                <span>Services</span>
+              </a>
+              <a href="#" class="blog-img__icon-link">
+                <i class="fa-solid fa-user"></i>
+                <span>04 Comment</span>
+              </a>
+            </div>
+          </div>
+          <h4 class="blog-item__title">
+            How and when to replace <br>
+            brack rotors
+          </h4>
+          <hr class="line">
+          <div class="elements">
+            <span class="data-time">
+              <i class="fa-solid fa-calendar-days"></i>
+              <span>August 27, 2021</span>
+            </span>
+            <a href="#" class="read-more">
+              <span>READ MORE</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="blog-section__content-item">
+          <div class="blog-image">
+            <img src="images/strawberry.png" alt="strawberry.png" class="blog-img">
+            <div class="blog-img__icons">
+              <a href="#" class="blog-img__icon-link">
+                <i class="fa-solid fa-user"></i>
+                <span>By: Admin</span>
+              </a>
+              <a href="#" class="blog-img__icon-link">
+                <i class="fa-solid fa-bookmark"></i>
+                <span>Services</span>
+              </a>
+              <a href="#" class="blog-img__icon-link">
+                <i class="fa-solid fa-user"></i>
+                <span>04 Comment</span>
+              </a>
+            </div>
+          </div>
+          <h4 class="blog-item__title">
+            Elenance, Services <br>
+            and repirs
+          </h4>
+          <hr class="line">
+          <div class="elements">
+            <span class="data-time">
+              <i class="fa-solid fa-calendar-days"></i>
+              <span>August 27, 2021</span>
+            </span>
+            <a href="#" class="read-more">
+              <span>READ MORE</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="subscribe-content" class="subscribe-content">
+        <div class="subscribe-content__image">
+          <img src="images/FruitSalad.png" alt="FruitSalad.png" class="subscribe-content__img">
+          <span class="vector">
+            <img src="images/Arrow.svg" alt="Arrow">
+          </span>
+        </div>
+        <div class="subscribe-content__email">
+          <h2 class="subscribe-title">
+            Subscribe To Newsletter
+          </h2>
+          <form action="#">
+            <label>
+              <input type="email" placeholder="Enter your email address...">
+            </label>
+            <a href="#" class="btn">SUBSCRIBE NOW</a>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <!-- Footer -->
+  <footer id="site-footer" class="site-footer">
+    <div id="footer-content" class="footer-content">
+      <div id="left-content" class="left-content">
+        <div class="left-content__social">
+          <img src="assets/css/images/logo.svg" alt="Logo Svg" class="logo-svg">
+          <p class="footer-subtitle">
+            There are many variations of <br>
+            passages of Lorem Ipsum available, <br>
+            but the majority have suffered <br>
+            alteration in some form.
+          </p>
+          <div class="social">
+            <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-instagram-square"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="left-content__links">
+          <h4 class="links-title">Quick Link</h4>
+          <ul class="footer-items">
+            <li class="footer-item__list"><a href="#" class="footer-item__link">Home</a></li>
+            <li class="footer-item__list"><a href="#" class="footer-item__link">Featured</a></li>
+            <li class="footer-item__list"><a href="#" class="footer-item__link">About Us</a></li>
+            <li class="footer-item__list"><a href="#" class="footer-item__link">Product</a></li>
+            <li class="footer-item__list"><a href="#" class="footer-item__link">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="right-content" class="right-content">
+        <div class="post">
+          <h4 class="links-title">Blog Post</h4>
+          <div class="post-blog__items">
+            <div class="post-blog__item">
+              <img src="images/TonyPahm.png" alt="TonyPahm" class="blog-item__img">
+              <div class="blog-item__name">
+                <h5 class="blog-title">
+                  Choosing Plants For Water <br>
+                  Conservation
+                </h5>
+                <p class="blog-subtitle">August 27, 2021</p>
+              </div>
+            </div>
+            <div class="post-blog__item">
+              <img src="images/benjamin.png" alt="benjamin" class="blog-item__img">
+              <div class="blog-item__name">
+                <h5 class="blog-title">
+                  Maintaining Your Yard <br>
+                  This Year
+                </h5>
+                <p class="blog-subtitle">August 27, 2021</p>
+              </div>
+            </div>
+            <div class="post-blog__item">
+              <img src="images/paige.png" alt="paige" class="blog-item__img">
+              <div class="blog-item__name">
+                <h5 class="blog-title">
+                  Tips For Managing Your <br>
+                  Irrigation System
+                </h5>
+                <p class="blog-subtitle">August 27, 2021</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="info">
+          <h4 class="links-title">Officeal Info</h4>
+          <div class="info-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="info-item__text">
+              30 Commercial Road <br>
+              Fratton, Australia
+            </p>
+          </div>
+          <div class="info-item">
+            <i class="fa-solid fa-phone"></i>
+            <p class="info-item__text">
+              1-888-452-1829
+            </p>
+          </div>
+          <h6 class="hours-title">Open Hours:</h6>
+          <p class="info-item__text">
+            Mon – Sat: 8 am – 5 pm, <br>
+            Sunday: CLOSED
+          </p>
+        </div>
+      </div>
+      <hr class="line">
+      <span class="footer-end__text">
+        Copyright © 2021, Orgamic. All Rights Reserved.
+      </span>
+    </div>
+  </footer>
 </body>
+
 </html>
