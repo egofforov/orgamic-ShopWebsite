@@ -1,0 +1,45 @@
+/* Core Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* img, video {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 100vw;
+  height: 100vh;
+  font-family: 'Duru Sans', 'Work Sans', 'Oswald', sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+
+a, img, span {
+  display: block;
+}
+
+.container {
+  width: 1136px;
+  margin: 0 auto;
+}
