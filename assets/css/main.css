@@ -398,32 +398,53 @@ a, img, span, i {
   width: 100%;
   padding-top: 12.3125rem;
   display: grid;
-  grid-template-columns: repeat(2, minmax(50%, auto));
-  grid-auto-rows: auto;
+  grid-template-columns: repeat(2, auto);
 }
 
 #quality-section__img {
-  border: 1px solid black;
   display: grid;
-  grid-template: 1fr 0.2fr / repeat(2, minmax(50%, auto));
+  grid-template-columns: repeat(2, auto);
   grid-template-areas: "img1 img2"
                        "img1 box";
+  place-content: center center;
+  place-items: center center;
+  column-gap: 1.375rem;
+  row-gap: 1.1875rem;
 }
 
 .jonathan-kamper {
-  width: 18.1875em;
   grid-area: img1;
 }
 
+.jonathan-kamper img {
+  width: 18.1875em;
+  height: 27.3125rem;
+  object-fit: cover;
+}
+
 .dose-juice {
+  grid-area: img2;
+}
+
+.dose-juice img {
   width: 16.875rem;
   height: 20.125rem;
   object-fit: cover;
-  grid-area: img2;
 }
 
 .description {
   width: 16.875rem;
+  height: 6.25rem;
   border: 1px dashed #76A713;
+  color: #76A713;
+  font-weight: 500;
+  font-family: Oswald;
+  font-size: 1.875rem;
+  line-height: 2.75rem;
   grid-area: box;
+}
+
+.description span {
+  font-weight: 600;
+  font-size: 2.224;
 }
