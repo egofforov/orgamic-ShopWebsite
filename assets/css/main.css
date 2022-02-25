@@ -5,11 +5,11 @@
   box-sizing: border-box;
 }
 
-/* img, video, svg {
+img, video, svg {
   width: 100%;
   height: auto;
   vertical-align: middle;
-} */
+}
 
 html {
   scroll-behavior: smooth;
@@ -396,9 +396,10 @@ a, img, span, i {
 
 #quality-section__box {
   width: 100%;
-  padding-top: 12.3125rem;
+  margin-top: 12.3125rem;
   display: grid;
   grid-template-columns: repeat(2, auto);
+  column-gap: 1.57rem;
 }
 
 #quality-section__img {
@@ -416,35 +417,41 @@ a, img, span, i {
   grid-area: img1;
 }
 
-.jonathan-kamper img {
-  width: 18.1875em;
-  height: 27.3125rem;
-  object-fit: cover;
-}
-
 .dose-juice {
   grid-area: img2;
 }
 
-.dose-juice img {
-  width: 16.875rem;
-  height: 20.125rem;
-  object-fit: cover;
-}
-
 .description {
   width: 16.875rem;
-  height: 6.25rem;
+  min-height: 6.25rem;
   border: 1px dashed #76A713;
-  color: #76A713;
-  font-weight: 500;
-  font-family: Oswald;
-  font-size: 1.875rem;
-  line-height: 2.75rem;
   grid-area: box;
 }
 
-.description span {
+.description-text {
+  border: none;
+  font-weight: 500;
+  font-family: Oswald;
+  font-size: 1.5rem;
+  font-style: normal;
+  color: #76A713;
+  line-height: 2.23rem;
+  letter-spacing: 3%;
+  text-align: center;
+  margin-top: 0.625rem;
+}
+
+.description-text span {
   font-weight: 600;
-  font-size: 2.224rem;
+  font-size: 1.875rem;
+  line-height: 2.78rem;
+}
+
+.section-title {
+  font-weight: 500;
+  font-style: normal;
+  font-family: Oswald;
+  font-size: 3.75rem;
+  line-height: 5.5rem;
+  color: #191D28;
 }
