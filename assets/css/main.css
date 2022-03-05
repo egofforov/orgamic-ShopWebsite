@@ -5,11 +5,11 @@
   box-sizing: border-box;
 }
 
-img, video, svg {
+/* img, video, svg {
   width: 100%;
   height: auto;
   vertical-align: middle;
-}
+} */
 
 html {
   scroll-behavior: smooth;
@@ -54,14 +54,11 @@ a, img, span, i {
 }
 
 .btn {
-  width: 6.25rem;
-  height: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #76A713;
   color: #fff;
-  padding: 1rem 2rem;
   transition: all 0.3s ease-in-out;
 }
 
@@ -223,6 +220,10 @@ a, img, span, i {
   justify-self: flex-end;
 }
 
+.site-nav__login .btn {
+  padding: 0.6rem 1.8rem;
+}
+
 .social-icon {
   width: 2.5rem;
   height: 2.5rem;
@@ -301,6 +302,7 @@ a, img, span, i {
 
 .hero-section__content .btn {
   width: 10rem;
+  padding: 0.6rem 1.8rem;
   margin-top: 1.75rem;
 }
 
@@ -396,9 +398,11 @@ a, img, span, i {
 
 #quality-section__box {
   width: 100%;
-  margin-top: 12.3125rem;
+  padding-top: 12.3125rem;
+  padding-bottom: 6.25rem;
   display: grid;
   grid-template-columns: repeat(2, auto);
+  place-items: center;
   column-gap: 1.57rem;
 }
 
@@ -406,9 +410,9 @@ a, img, span, i {
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-auto-rows: auto;
+  place-content: start space-between;
   grid-template-areas: "img1 img2"
                        "img1 box";
-  align-items: flex-start;
   column-gap: 1.375rem;
   row-gap: 1.1875rem;
 }
@@ -447,6 +451,12 @@ a, img, span, i {
   line-height: 2.78rem;
 }
 
+.quality-section__content {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 0.3fr 0.5fr 0.1fr 0.1fr;
+}
+
 .section-title {
   font-weight: 500;
   font-style: normal;
@@ -454,4 +464,150 @@ a, img, span, i {
   font-size: 3.75rem;
   line-height: 5.5rem;
   color: #191D28;
+  margin-bottom: 2.43rem;
+}
+
+.blockquote {
+  display: flex;
+  position: relative;
+  border-left: 2px solid #76A713;
+  padding-left: 1rem;
+  margin-top: 2.18rem;
+}
+
+.section-subtitle, .blokquote-text {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  color: #888;
+}
+
+.comma-img {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 60%;
+}
+
+.comma {
+  width: 0.75rem;
+  height: 1.25rem;
+  margin-right: 0.25rem;
+}
+
+.user-info {
+  margin-top: 1rem;
+}
+
+.user-name {
+  font-family: Oswald;
+  font-size: 1.125rem;
+  line-height: 1.56rem;
+  color: #000;
+}
+
+.user-job {
+  font-weight: 500;
+  font-size: 0.81rem;
+  line-height: 1.125rem;
+  color: #aaa;
+}
+
+#categories-section {
+  width: 100%;
+  padding: 6.25rem 7.18rem;
+  background-color: #F8F8F8;
+}
+
+#categories-section__items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  grid-column-gap: 1.875rem;
+}
+
+.categories-section__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 1px solid #DDDDDD;
+  transition: all 0.2s ease-in-out;
+}
+
+.categories-section__item:hover {
+  border: 1px solid #76A713;
+  background-color: #fff;
+}
+
+.categories-section__img img{
+  transition: all 0.9s ease-in-out;
+}
+
+.categories-section__item:hover .categories-section__img img {
+  transform: scale(1.1);
+}
+
+.categories-section__text {
+  width: 13.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-type {
+  font-weight: 500;
+  font-family: Oswald;
+  font-size: 1.8rem;
+  line-height: 2.77rem;
+  color: #76A713;
+}
+
+.product-description {
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+  color: #888888;
+  margin-top: 0.8rem;
+}
+
+.btn-wrapper {
+  margin-top: 1.68rem;
+}
+
+.btn-wrapper .btn {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+
+.btn-wrapper .btn i {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #76A713;
+  color: #76A713;
+}
+
+.btn-wrapper .btn span {
+  height: 2.5rem;
+  display: none;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 2rem;
+  padding: 0.3rem 1.125rem;
+  background-color: #76A713;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-wrapper:hover .btn i {
+  display: none;
+}
+
+.btn-wrapper:hover .btn span {
+  display: block;
 }
