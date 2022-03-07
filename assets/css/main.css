@@ -66,6 +66,16 @@ a, img, span, i {
   box-shadow: 0 10px 18px -10px #76A713;
 }
 
+.section-title {
+  font-weight: 500;
+  font-style: normal;
+  font-family: Oswald;
+  font-size: 3.75rem;
+  line-height: 5.5rem;
+  color: #191D28;
+  margin-bottom: 2.43rem;
+}
+
 /* Site Header Styles */
 #site-header {
   max-width: 100%;
@@ -456,14 +466,8 @@ a, img, span, i {
   grid-template-rows: 0.3fr 0.5fr 0.1fr 0.1fr;
 }
 
-.section-title {
-  font-weight: 500;
-  font-style: normal;
-  font-family: Oswald;
-  font-size: 3.75rem;
-  line-height: 5.5rem;
-  color: #191D28;
-  margin-bottom: 2.43rem;
+.quality-section__content .section-title {
+  text-align: left;
 }
 
 .blockquote {
@@ -512,6 +516,7 @@ a, img, span, i {
   color: #aaa;
 }
 
+/* Categories Section Style*/
 #categories-section {
   width: 100%;
   padding: 6.25rem 7.18rem;
@@ -611,6 +616,7 @@ a, img, span, i {
   display: block;
 }
 
+/* Products Section Style */
 #products-section {
   width: 100%;
   padding: 6.25rem 0;
@@ -721,6 +727,7 @@ a, img, span, i {
   line-height: 1rem;
   padding: 0.3125rem 0.75rem;
   background-color: #FF6600;
+  color: #FFFFFF;
   position: absolute;
   top: 5%;
   left: 0;
@@ -763,4 +770,123 @@ a, img, span, i {
 .products-content__item-info .btn {
   margin-top: 1.875rem;
   padding: 0.625rem 1.125rem;
+}
+
+/* Featured Section Style */
+#discounts__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-content: stretch space-between;
+  place-items: stretch;
+}
+
+.discounts__left,
+.discounts__right {
+  width: 100%;
+  height: 18.75rem;
+  padding: 2.875rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.discounts__left {
+  background: url(/images/OrganicFood2x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  background-color: #76A713;
+}
+
+.discounts__subtitle {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.193125rem;
+  color: #FFFFFF;
+}
+
+.discounts__title {
+  font-family: Oswald;
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 3.705rem;
+  color: #FFFFFF;
+  text-align: end;
+  margin-bottom: 1.8125rem;
+}
+
+.discounts__left .btn {
+  padding: 0.625rem 1.125rem;
+  background-color: #FF6600;
+}
+
+.discounts__right {
+  background: url(/images/FruitDietry2x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  background-color: #FF6600;
+}
+
+.discounts__right .btn {
+  padding: 0.625rem 1.125rem;
+  background-color: #76A713;
+}
+
+/* Featured-Products Style */
+#featured-products__section .container {
+  padding: 6.25rem 0;
+}
+
+#featured-products__content-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.875rem;
+}
+
+.arrov-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.875rem;
+}
+
+.arrow + .arrow {
+  margin-left: 1rem;
+}
+
+/* Tesimonials-Funfact Section Style */
+
+#funfact {
+  padding: 4.6875rem 3.5rem;
+  background: url(/images/Green-Fon2x.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.funfact-content__items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-content: center space-between;
+  place-items: center;
+}
+
+.funfact-content__item {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.funfct-title {
+  font-family: Oswald;
+  font-weight: 600;
+  font-size: 3.75rem;
+  line-height: 2rem;
+}
+
+.funfact-subtitle {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  margin-top: 2rem;
 }
